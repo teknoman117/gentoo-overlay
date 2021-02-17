@@ -9,10 +9,9 @@ HOMEPAGE="https://gitlab.com/DavidGriffith/minipro"
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://gitlab.com/DavidGriffith/minipro.git"
-	KEYWORDS="~amd64 ~x86"
 else
 	SRC_URI="https://gitlab.com/DavidGriffith/minipro/-/archive/${PV}/minipro-${PV}.tar.gz"
-	KEYWORDS="amd64 x86"
+	KEYWORDS="~amd64 ~x86"
 fi
 
 LICENSE="GPL-3"
