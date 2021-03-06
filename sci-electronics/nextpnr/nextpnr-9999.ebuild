@@ -13,7 +13,7 @@ LICENSE="ISC"
 SLOT="0"
 KEYWORDS=""
 
-IUSE="+ecp5 +ice40"
+IUSE="+ecp5 +ice40 qt5"
 
 DEPEND="
 	ecp5? (
@@ -24,9 +24,9 @@ DEPEND="
 		sci-electronics/icestorm
 		sci-electronics/yosys
 	)
+	qt5? ( dev-qt/qtcore:5 )
 	dev-cpp/eigen:3
 	dev-libs/boost:=[threads]
-	dev-qt/qtcore:5
 	"
 RDEPEND="${DEPEND}"
 BDEPEND=""
@@ -34,6 +34,7 @@ BDEPEND=""
 src_configure() {
 	local mycmakeargs=(
 		-DARCH="$(usex ice40 'ice40;' '')$(usex ecp5 'ecp5' '')"
+		-DBUILD_GUI=ON
 		-DUSE_OPENMP=ON
 	)
 	cmake-utils_src_configure
