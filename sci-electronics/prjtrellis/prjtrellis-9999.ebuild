@@ -17,7 +17,7 @@ KEYWORDS=""
 
 DEPEND="
 	dev-libs/boost:=
-	openocd[ftdi]"
+	dev-embedded/openocd[ftdi]"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
