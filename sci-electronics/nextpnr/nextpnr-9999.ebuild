@@ -36,7 +36,7 @@ src_configure() {
 		-DARCH="$(usex ice40 'ice40;' '')$(usex ecp5 'ecp5' '')"
 		-DBUILD_GUI=ON
 		-DUSE_OPENMP=ON
-		-DBUILD_SHARE_LIBS=OFF
+		-DBUILD_SHARED_LIBS=OFF
 	)
 	cmake-utils_src_configure
 }
