@@ -10,10 +10,10 @@ HOMEPAGE="https://www.veripool.org/wiki/verilator"
 
 if [[ ${PV} == "9999" ]] ; then
 	inherit git-r3
-	EGIT_REPO_URI="https://git.veripool.org/git/${PN}"
+	EGIT_REPO_URI="https://github.com/verilator/${PN}"
 else
-	SRC_URI="http://www.veripool.org/ftp/${P}.tgz -> ${P}.tar.gz"
-	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sh ~sparc ~x86"
+	SRC_URI="https://github.com/verilator/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64 ~arm64 ~x86"
 fi
 
 LICENSE="|| ( Artistic-2 LGPL-3 )"
