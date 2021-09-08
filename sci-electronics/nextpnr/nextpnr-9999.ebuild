@@ -13,7 +13,7 @@ LICENSE="ISC"
 SLOT="0"
 KEYWORDS=""
 
-IUSE="+ecp5 +ice40 qt5"
+IUSE="+ecp5 +ice40 nexus qt5"
 
 DEPEND="
 	ecp5? (
@@ -22,6 +22,10 @@ DEPEND="
 	)
 	ice40? (
 		sci-electronics/icestorm
+		sci-electronics/yosys
+	)
+	nexus? (
+		sci-electronics/prjoxide
 		sci-electronics/yosys
 	)
 	qt5? ( dev-qt/qtcore:5 )
@@ -33,8 +37,8 @@ BDEPEND=""
 
 src_configure() {
 	local mycmakeargs=(
-		-DARCH="$(usex ice40 'ice40;' '')$(usex ecp5 'ecp5' '')"
-		-DBUILD_GUI=ON
+		-DARCH="$(usex ice40 'ice40;' '')$(usex ecp5 'ecp5;' '')$(usex nexus 'nexus' '')"
+		-DBUILD_GUI=$(usex qt5 'ON' 'OFF')
 		-DUSE_OPENMP=ON
 		-DBUILD_SHARED_LIBS=OFF
 	)
