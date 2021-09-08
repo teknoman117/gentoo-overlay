@@ -94,7 +94,7 @@ HOMEPAGE="https://github.com/gatecat/prjoxide"
 inherit git-r3
 EGIT_REPO_URI="https://github.com/gatecat/prjoxide"
 
-LICENSE="Apache-2.0 BSD-3-Clause BSL-1.0 ISC MIT Unlicense"
+LICENSE="Apache-2.0 BSD Boost-1.0 ISC MIT"
 SLOT="0"
 IUSE=""
 
