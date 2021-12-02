@@ -30,7 +30,7 @@ DEPEND="
 	)
 	qt5? ( dev-qt/qtcore:5 )
 	dev-cpp/eigen:3
-	dev-libs/boost:=[threads]
+	>=dev-libs/boost-1.77:=
 	"
 RDEPEND="${DEPEND}"
 BDEPEND=""
