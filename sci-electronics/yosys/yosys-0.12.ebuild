@@ -1,12 +1,11 @@
 EAPI=7
 
-GIT_COMMIT=2be110cb0ba645f95f62ee01b6a6fa46a85d5b26
 ABC_GIT_COMMIT=f6fa2ddcfc89099726d60386befba874c7ac1e0d
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
-SRC_URI="https://github.com/YosysHQ/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz
+SRC_URI="https://github.com/YosysHQ/yosys/archive/refs/tags/${P}.tar.gz -> ${P}.tar.gz
 	 https://github.com/YosysHQ/abc/archive/$ABC_GIT_COMMIT.tar.gz -> abc-$ABC_GIT_COMMIT.tar.gz"
 LICENSE=ISC
 SLOT=0
