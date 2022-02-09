@@ -1,9 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit desktop eutils
+inherit desktop wrapper
 
 RESTRICT="strip"
 
@@ -14,19 +14,19 @@ QA_PREBUILT="
 	opt/${PN}/jre/lib/jli/*
 	opt/${PN}/jre/lib/server/*
 	opt/${PN}/lib/pty4j-native/linux/*/*
-	opt/${PN}/plugins/android-ndk/resources/lldb/android/*/*
-	opt/${PN}/plugins/android-ndk/resources/lldb/bin/*
-	opt/${PN}/plugins/android-ndk/resources/lldb/lib64/*
-	opt/${PN}/plugins/android-ndk/resources/lldb/lib/python3.8/lib-dynload/*
 	opt/${PN}/plugins/android/resources/installer/*/*
 	opt/${PN}/plugins/android/resources/layoutlib/data/linux/lib64/*
+	opt/${PN}/plugins/android/resources/native/*
 	opt/${PN}/plugins/android/resources/perfetto/*/*
 	opt/${PN}/plugins/android/resources/simpleperf/*/*
 	opt/${PN}/plugins/android/resources/trace_processor_daemon/*
 	opt/${PN}/plugins/android/resources/transport/*/*
 	opt/${PN}/plugins/android/resources/transport/native/agent/*/*
-	opt/${PN}/plugins/android/resources/transport/*/*
-	opt/${PN}/plugins/c-plugin/bin/clang/linux/*
+	opt/${PN}/plugins/android-ndk/resources/lldb/android/*/*
+	opt/${PN}/plugins/android-ndk/resources/lldb/bin/*
+	opt/${PN}/plugins/android-ndk/resources/lldb/lib/python3.9/lib-dynload/*
+	opt/${PN}/plugins/android-ndk/resources/lldb/lib64/*
+	opt/${PN}/plugins/c-clangd/bin/clang/linux/*
 	opt/${PN}/plugins/webp/lib/libwebp/linux/*
 "
 
@@ -63,7 +63,6 @@ RDEPEND="${DEPEND}
 	>=x11-libs/libxcb-1.9.1
 	>=x11-libs/libxshmfence-1.1
 	virtual/libcrypt:=
-	!!<dev-util/android-studio-2020.3.1.24
 "
 
 S=${WORKDIR}/${PN}
@@ -76,11 +75,21 @@ src_install() {
 	local dir="/opt/${PN}"
 	insinto "${dir}"
 	doins -r *
-	fperms 755 "${dir}"/bin/{fsnotifier{,64},printenv.py,restart.py,format.sh,inspect.sh,studio.sh}
-	fperms -R 755 "${dir}"/bin/lldb
-	fperms -R 755 "${dir}"/plugins/{android-ndk/resources/lldb,c-plugin/bin}
+
+#	fperms 755 "${dir}"/bin/{fsnotifier{,64},printenv.py,restart.py,format.sh,game-tools.sh,inspect.sh,studio.sh}
+	fperms 755 "${dir}"/bin/{fsnotifier{,64},*.py,*.sh}
+#	fperms -R 755 "${dir}"/bin/lldb
 	fperms -R 755 "${dir}"/jre/bin
-	fperms 755 ${dir}/jre/lib/jexec
+	fperms 755 "${dir}"/jre/lib/jexec
+	fperms -R 755 "${dir}"/plugins/android/resources/installer
+	fperms -R 755 "${dir}"/plugins/android/resources/perfetto
+	fperms -R 755 "${dir}"/plugins/android/resources/simpleperf
+	fperms -R 755 "${dir}"/plugins/android/resources/trace_processor_daemon
+	fperms -R 755 "${dir}"/plugins/android/resources/transport/{arm64-v8a,armeabi-v7a,x86,x86_64}
+	fperms -R 755 "${dir}"/plugins/android-ndk/resources/lldb/{android,bin}
+	fperms 755 "${dir}"/plugins/c-clangd/bin/clang/linux/{clang-tidy,clangd}
+	fperms -R 755 "${dir}"/plugins/Kotlin/kotlinc/bin
+
 	newicon "bin/studio.png" "${PN}.png"
 	make_wrapper ${PN} ${dir}/bin/studio.sh
 	make_desktop_entry ${PN} "Android Studio" ${PN} "Development;IDE" "StartupWMClass=jetbrains-studio"
