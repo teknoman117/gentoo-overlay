@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils git-r3
+inherit cmake git-r3
 
 DESCRIPTION="Portable FPGA place and route tool"
 HOMEPAGE="https://github.com/YosysHQ/nextpnr"
@@ -42,5 +42,5 @@ src_configure() {
 		-DUSE_OPENMP=ON
 		-DBUILD_SHARED_LIBS=OFF
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
