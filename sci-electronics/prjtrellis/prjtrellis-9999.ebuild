@@ -6,7 +6,7 @@ EAPI=7
 DESCRIPTION="Documenting the Lattice ECP5 bit-stream format."
 HOMEPAGE=""
 
-inherit cmake-utils git-r3
+inherit cmake git-r3
 
 EGIT_REPO_URI="https://github.com/YosysHQ/prjtrellis"
 EGIT_SUBMODULES=("database")
