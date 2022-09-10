@@ -3,7 +3,9 @@
 
 EAPI=7
 
-inherit cmake git-r3
+PYTHON_COMPAT=( python3_{5..10} )
+
+inherit cmake git-r3 python-single-r1
 
 DESCRIPTION="Portable FPGA place and route tool"
 HOMEPAGE="https://github.com/YosysHQ/nextpnr"
@@ -14,8 +16,9 @@ SLOT="0"
 KEYWORDS=""
 
 IUSE="+ecp5 +ice40 nexus qt5"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-DEPEND="
+DEPEND="${PYTHON_DEPS}
 	ecp5? (
 		sci-electronics/prjtrellis
 		sci-electronics/yosys
@@ -35,12 +38,19 @@ DEPEND="
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+PATCHES=(
+	"${FILESDIR}/exact-python-version.patch"
+)
+
 src_configure() {
+	version=${PYTHON_SINGLE_TARGET#"python"}
+	version=${version//_/.}
 	local mycmakeargs=(
 		-DARCH="$(usex ice40 'ice40;' '')$(usex ecp5 'ecp5;' '')$(usex nexus 'nexus' '')"
 		-DBUILD_GUI=$(usex qt5 'ON' 'OFF')
 		-DUSE_OPENMP=ON
 		-DBUILD_SHARED_LIBS=OFF
+		-DBUILD_PYTHON_VERSION=${version}
 	)
 	cmake_src_configure
 }

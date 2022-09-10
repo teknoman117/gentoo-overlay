@@ -1,0 +1,38 @@
+From 0cee5a05e594816da18b440766f40669e9a5315f Mon Sep 17 00:00:00 2001
+From: "Nathaniel R. Lewis" <linux.robotdude@gmail.com>
+Date: Sat, 10 Sep 2022 09:26:57 -0700
+Subject: [PATCH] exact python version
+
+---
+ CMakeLists.txt | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 269e90eb..7644b1d9 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -21,6 +21,8 @@ option(WERROR "pass -Werror to compiler (used for CI)" OFF)
+ option(PROFILER "Link against libprofiler" OFF)
+ option(USE_IPO "Compile nextpnr with IPO" ON)
+ 
++set(BUILD_PYTHON_VERSION "3.10" CACHE STRING "Version of python to use")
++
+ if (USE_IPO)
+     if (ipo_supported)
+         message(STATUS "Building with IPO")
+@@ -173,10 +175,10 @@ if (BUILD_GUI)
+     set(CMAKE_ENABLE_EXPORTS ON)
+ endif()
+ 
+-find_package(Python3 3.5 REQUIRED COMPONENTS Interpreter)
++find_package(Python3 ${BUILD_PYTHON_VERSION} EXACT REQUIRED COMPONENTS Interpreter)
+ if (BUILD_PYTHON)
+     # TODO: sensible minimum Python version
+-    find_package(Python3 3.5 REQUIRED COMPONENTS Development)
++    find_package(Python3 ${BUILD_PYTHON_VERSION} EXACT REQUIRED COMPONENTS Development)
+ else()
+     add_definitions("-DNO_PYTHON")
+ endif()
+-- 
+2.35.1
+
