@@ -9,7 +9,7 @@ SRC_URI="https://github.com/YosysHQ/$PN/archive/$P.tar.gz -> $P.tar.gz
 	 https://github.com/YosysHQ/abc/archive/$ABC_GIT_COMMIT.tar.gz -> abc-$ABC_GIT_COMMIT.tar.gz"
 LICENSE=ISC
 SLOT=0
-KEYWORDS=
+KEYWORDS="~amd64"
 
 DEPEND="dev-vcs/git
 	media-gfx/xdot
