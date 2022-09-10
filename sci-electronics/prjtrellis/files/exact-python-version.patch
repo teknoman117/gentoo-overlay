@@ -1,0 +1,37 @@
+From 8260a0ab361ee96c210460310c9ddc2c55778451 Mon Sep 17 00:00:00 2001
+From: "Nathaniel R. Lewis" <linux.robotdude@gmail.com>
+Date: Sat, 10 Sep 2022 08:58:59 -0700
+Subject: [PATCH] modify cmake to take exact python version
+
+---
+ libtrellis/CMakeLists.txt | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/libtrellis/CMakeLists.txt b/libtrellis/CMakeLists.txt
+index 2402143..063a4d1 100644
+--- a/libtrellis/CMakeLists.txt
++++ b/libtrellis/CMakeLists.txt
+@@ -5,6 +5,8 @@ option(BUILD_PYTHON "Build Python Integration" ON)
+ option(BUILD_SHARED "Build shared Trellis library" ON)
+ option(STATIC_BUILD "Create static build of Trellis tools" OFF)
+ 
++set(BUILD_PYTHON_VERSION "3.10" CACHE STRING "Version of python to use")
++
+ set(PROGRAM_PREFIX "" CACHE STRING "Name prefix for executables")
+ 
+ set(CMAKE_CXX_STANDARD 14)
+@@ -50,9 +52,9 @@ else()
+ endif()
+ set(Boost_NO_BOOST_CMAKE ON)
+ 
+-find_package(Python3 3.5 REQUIRED COMPONENTS Interpreter)
++find_package(Python3 ${BUILD_PYTHON_VERSION} EXACT REQUIRED COMPONENTS Interpreter)
+ if (BUILD_PYTHON)
+-    find_package(Python3 3.5 REQUIRED COMPONENTS Development)
++    find_package(Python3 ${BUILD_PYTHON_VERSION} EXACT REQUIRED COMPONENTS Development)
+     set(PythonInstallTarget "pytrellis")
+ endif()
+ 
+-- 
+2.35.1
+
