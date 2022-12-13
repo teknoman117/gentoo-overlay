@@ -3,6 +3,8 @@
 
 EAPI=7
 
+inherit udev
+
 DESCRIPTION="An open source program for controlling the MiniPRO TL866xx series of chip programmers"
 HOMEPAGE="https://gitlab.com/DavidGriffith/minipro"
 
@@ -28,4 +30,12 @@ src_compile() {
 
 src_install() {
 	emake PREFIX="/usr" DESTDIR="${D}" install
+}
+
+pkg_postinst() {
+	udev_reload
+}
+
+pkg_postrm() {
+	udev_reload
 }
