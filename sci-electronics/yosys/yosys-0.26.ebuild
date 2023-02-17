@@ -1,6 +1,6 @@
 EAPI=7
 
-ABC_GIT_COMMIT=be9a35c0363174a7cef21d55ed80d92a9ef95ab1
+ABC_GIT_COMMIT=a8f0ef2368aa56b3ad20a52298a02e63b2a93e2d
 S=$WORKDIR/$PN-$P
 
 DESCRIPTION="framework for Verilog RTL synthesis"
