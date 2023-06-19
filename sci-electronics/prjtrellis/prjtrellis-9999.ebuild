@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{5..10} )
+PYTHON_COMPAT=( python3_{5..11} )
 
 DESCRIPTION="Documenting the Lattice ECP5 bit-stream format."
 HOMEPAGE=""
