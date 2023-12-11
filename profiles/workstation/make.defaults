@@ -1,0 +1,1 @@
+USE="acl bluetooth crypt cuda egl ffmpeg gles2 glvnd libinput nvenc opencl readline vaapi vdpau zeroconf zsh-completion -consolekit -gnome -systemd"
