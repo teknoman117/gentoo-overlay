@@ -1,3 +1,10 @@
+VIDEO_CARDS="amdgpu nvidia radeonsi"
+LLVM_TARGETS="AARCH64 ARM AMDGPU BPF M68k NVPTX RISCV"
+QEMU_SOFTMMU_TARGETS="x86_64 i386"
+QEMU_USER_TARGETS="aarch64 arm m68k riscv32 riscv64 x86_64"
+CURL_SSL="openssl"
+
+USE="acl bluetooth crypt cuda egl ffmpeg gles2 glvnd libinput nvenc opencl readline vaapi vdpau zeroconf zsh-completion -consolekit -gnome -systemd"
+
 ABI_X86="64 32"
 ACCEPT_KEYWORDS="~amd64"
-USE="acl bluetooth crypt cuda egl ffmpeg gles2 glvnd libinput nvenc opencl readline vaapi vdpau zeroconf zsh-completion -consolekit -gnome -systemd"
