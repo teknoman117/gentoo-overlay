@@ -1,0 +1,19 @@
+# KDE features we disable
+kde-apps/kde-apps-meta accessibility education games graphics multimedia
+kde-apps/kdecore-meta webengine
+
+# Use ROCm for OpenCL
+media-libs/mesa opencl
+
+# OpenCV support is causing segmentation faults in the compiler
+media-libs/opencv cuda
+
+# Ensure pipewire pulse emulation is used
+media-sound/pulseaudio daemon
+
+# Disable FFmpeg in packages which don't support current FFmpeg
+media-video/vlc ffmpeg vaapi vdpau
+sci-libs/opencascade ffmpeg
+
+# ?
+sys-libs/glibc clone3
