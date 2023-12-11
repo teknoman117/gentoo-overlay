@@ -46,8 +46,6 @@ net-misc/remmina vnc
 net-misc/spice-gtk usbredir
 net-misc/tigervnc dri3 server
 net-wireless/bluez deprecated extra-tools
-*/* PYTHON_SINGLE_TARGET: -* python3_11
-*/* PYTHON_TARGETS: -* python3_11
 sci-electronics/nextpnr ecp5 ice40 nexus qt5
 sci-libs/cgnslib hdf5
 sci-libs/opencascade json vtk -ffmpeg
