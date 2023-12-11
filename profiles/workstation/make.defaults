@@ -6,4 +6,6 @@ CURL_SSL="openssl"
 USE="acl bluetooth crypt cuda egl ffmpeg gles2 glvnd libinput nvenc opencl readline vaapi vdpau zeroconf zsh-completion -consolekit -gnome -systemd"
 
 ABI_X86="64 32"
+
 ACCEPT_KEYWORDS="~amd64"
+ACCEPT_LICENSE="all-rights-reserved android bh-luxi google-chrome linux-fw-redistributable Microsoft-vscode MPEG-4 MSttfEULA no-source-code NVIDIA-CUDA NVIDIA-r2 Spotify Turkowski unRAR ValveSteamLicense xgraph"
