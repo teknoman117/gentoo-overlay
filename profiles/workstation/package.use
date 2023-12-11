@@ -1,0 +1,66 @@
+app-admin/sysklogd logrotate
+app-containers/containerd btrfs
+app-containers/docker btrfs
+app-crypt/pinentry gnome-keyring
+app-emulation/qemu static-user
+dev-lang/python tk
+dev-libs/boost context python
+dev-libs/glib static-libs
+dev-libs/libdbusmenu gtk3
+dev-libs/libpcre2 pcre32
+dev-libs/libpcre2 static-libs
+dev-libs/weston examples pipewire wayland-compositor xwayland
+dev-python/numpy lapack
+dev-python/pillow webp
+dev-python/pyside2 webengine
+dev-qt/qtpositioning geoclue
+dev-util/astyle java
+games-fps/quakespasm sdl2
+games-util/steam-client-meta steamfonts
+kde-apps/kde-apps-meta pim -accessibility -education -games -graphics -multimedia
+kde-apps/kdecore-meta -webengine
+kde-plasma/kde-cli-tools kdesu X
+kde-plasma/plasma-meta legacy-systray networkmanager thunderbolt
+media-gfx/gimp webp
+media-libs/freetype brotli harfbuzz
+media-libs/libsdl2 haptic
+media-libs/libva utils
+
+# Use ROCm for OpenCL
+media-libs/mesa -opencl
+
+# OpenCV support is causing segmentation faults in the compiler
+media-libs/opencv -cuda
+
+media-libs/tiff lzma zstd
+media-sound/pulseaudio -daemon
+media-video/ffmpeg jpeg2k libass libdrm opus theora v4l vpx webp x265
+media-video/pipewire aptx extra ldac sound-server
+media-video/vlc -ffmpeg -vaapi -vdpau
+net-dns/avahi mdnsresponder-compat
+net-dns/dnsmasq script
+net-libs/gnutls pkcs11 tools
+net-libs/libwebsockets client
+net-misc/networkmanager bluetooth connection-sharing iptables iwd
+net-misc/remmina vnc
+net-misc/spice-gtk usbredir
+net-misc/tigervnc dri3 server
+net-wireless/bluez deprecated extra-tools
+*/* PYTHON_SINGLE_TARGET: -* python3_11
+*/* PYTHON_TARGETS: -* python3_11
+sci-electronics/nextpnr ecp5 ice40 nexus qt5
+sci-libs/cgnslib hdf5
+sci-libs/opencascade json vtk -ffmpeg
+sci-libs/vtk vtkm
+sys-apps/attr static-libs
+sys-apps/util-linux tty-helpers
+sys-apps/xdg-desktop-portal screencast
+sys-block/fio aio io-uring
+sys-devel/clang llvm_targets_NVPTX
+sys-devel/gcc vtv
+sys-devel/llvm llvm_targets_NVPTX
+sys-libs/glibc -clone3
+sys-libs/zlib static-libs
+x11-drivers/nvidia-drivers uvm
+x11-libs/libdrm video_cards_radeon
+x11-libs/wxGTK gstreamer
