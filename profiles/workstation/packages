@@ -21,6 +21,7 @@
 *app-eselect/eselect-repository
 *app-misc/asciinema
 *app-misc/evtest
+*app-misc/fdupes
 *app-misc/neofetch
 *app-misc/radeontop
 *app-misc/screen
@@ -138,6 +139,7 @@
 *sci-electronics/nextpnr
 *sci-electronics/verilator
 *sci-geosciences/gpsd
+*sci-libs/nlopt
 *sys-apps/dstat
 *sys-apps/ethtool
 *sys-apps/fxload
