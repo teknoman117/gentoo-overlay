@@ -37,6 +37,7 @@
 *dev-debug/gdb
 *dev-debug/lldb
 *dev-debug/ltrace
+*dev-debug/strace
 *dev-debug/valgrind
 *dev-embedded/arduino
 *dev-embedded/avrdude
@@ -65,7 +66,6 @@
 *dev-util/pahole
 *dev-util/rocm-smi
 *dev-util/rocm_bandwidth_test
-*dev-util/strace
 *dev-util/thonny
 *dev-util/vbindiff
 *dev-util/vulkan-headers
