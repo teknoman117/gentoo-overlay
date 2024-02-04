@@ -34,6 +34,10 @@
 *app-text/dos2unix
 *dev-cpp/asio
 *dev-cpp/gtkmm
+*dev-debug/gdb
+*dev-debug/lldb
+*dev-debug/ltrace
+*dev-debug/valgrind
 *dev-embedded/arduino
 *dev-embedded/avrdude
 *dev-embedded/minipro
@@ -58,14 +62,11 @@
 *dev-util/android-studio
 *dev-util/ccache
 *dev-util/clinfo
-*dev-util/lldb
-*dev-util/ltrace
 *dev-util/pahole
 *dev-util/rocm-smi
 *dev-util/rocm_bandwidth_test
 *dev-util/strace
 *dev-util/thonny
-*dev-util/valgrind
 *dev-util/vbindiff
 *dev-util/vulkan-headers
 *dev-util/vulkan-tools
@@ -168,7 +169,6 @@
 *sys-boot/syslinux
 *sys-boot/woeusb
 *sys-devel/crossdev
-*sys-devel/gdb
 *sys-devel/lld
 *sys-fs/bcache-tools
 *sys-fs/btrfs-progs
