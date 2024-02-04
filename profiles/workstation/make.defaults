@@ -1,11 +1,11 @@
-LLVM_TARGETS="AARCH64 ARM AMDGPU BPF M68k NVPTX RISCV"
+LLVM_TARGETS="AARCH64 ARM AMDGPU BPF M68k RISCV"
 QEMU_SOFTMMU_TARGETS="x86_64 i386"
 QEMU_USER_TARGETS="aarch64 arm m68k riscv32 riscv64 x86_64"
 CURL_SSL="openssl"
 
-USE="acl bluetooth crypt cuda egl ffmpeg gles2 glvnd libinput nvenc opencl readline vaapi vdpau zeroconf zsh-completion -consolekit -gnome -systemd"
+USE="acl bluetooth crypt egl ffmpeg gles2 glvnd libinput nvenc opencl readline vaapi zeroconf zsh-completion -consolekit -gnome -systemd"
 
 ABI_X86="64 32"
 
 ACCEPT_KEYWORDS="~amd64"
-ACCEPT_LICENSE="all-rights-reserved android bh-luxi google-chrome linux-fw-redistributable Microsoft-vscode MPEG-4 MSttfEULA no-source-code NVIDIA-CUDA NVIDIA-r2 Spotify Turkowski unRAR ValveSteamLicense xgraph @FREE"
+ACCEPT_LICENSE="all-rights-reserved android bh-luxi google-chrome linux-fw-redistributable Microsoft-vscode MPEG-4 MSttfEULA no-source-code Spotify Turkowski unRAR ValveSteamLicense xgraph @FREE"

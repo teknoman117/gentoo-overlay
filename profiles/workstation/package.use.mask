@@ -5,9 +5,6 @@ kde-apps/kdecore-meta webengine
 # Use ROCm for OpenCL
 media-libs/mesa opencl
 
-# OpenCV support is causing segmentation faults in the compiler
-media-libs/opencv cuda
-
 # Ensure pipewire pulse emulation is used
 media-sound/pulseaudio daemon
 
