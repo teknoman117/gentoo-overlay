@@ -180,6 +180,7 @@
 *=sys-kernel/gentoo-sources-6.1*
 *=sys-kernel/gentoo-sources-6.6*
 *sys-kernel/linux-firmware
+*=sys-kernel/linux-headers-6.6*
 *sys-libs/libcxx
 *sys-libs/ncurses-compat
 *sys-power/apcupsd
