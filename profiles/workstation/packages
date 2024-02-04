@@ -124,6 +124,7 @@
 *net-libs/libmicrohttpd
 *net-libs/libntlm
 *net-misc/dhcpcd
+*=net-misc/freerdp-2*
 *net-misc/iperf
 *net-misc/mosh
 *net-misc/ntp
