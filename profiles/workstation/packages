@@ -43,7 +43,6 @@
 *dev-embedded/avrdude
 *dev-embedded/minipro
 *dev-java/sbt-bin
-*dev-lang/gnat-gpl:10
 *dev-libs/cereal
 *dev-libs/imath:3
 *dev-libs/libdbusmenu
