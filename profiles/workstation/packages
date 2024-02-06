@@ -98,6 +98,7 @@
 *media-gfx/openvdb
 *media-libs/glfw
 *media-libs/libdisplay-info
+*=media-libs/mesa:23*
 *media-libs/sdl2-mixer
 *media-libs/sdl2-ttf
 *media-libs/vulkan-layers
