@@ -15,7 +15,7 @@ S="${WORKDIR}/${PN}-${P}"
 
 LICENSE="ISC"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 IUSE="+ecp5 +ice40 nexus qt5"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
