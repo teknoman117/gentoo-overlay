@@ -39,9 +39,9 @@
 *dev-debug/ltrace
 *dev-debug/strace
 *dev-debug/valgrind
-*dev-embedded/arduino
 *dev-embedded/avrdude
 *dev-embedded/minipro
+*dev-embedded/picotool
 *dev-java/sbt-bin
 *dev-libs/cereal
 *dev-libs/imath:3
