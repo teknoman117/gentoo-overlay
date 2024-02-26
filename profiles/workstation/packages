@@ -56,7 +56,6 @@
 *dev-python/pip
 *dev-python/pyelftools
 *dev-python/pyserial
-*dev-python/python-evdev
 *dev-python/pyudev
 *dev-python/pyyaml
 *dev-python/virtualenv
