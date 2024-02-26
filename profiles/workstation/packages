@@ -39,6 +39,7 @@
 *dev-debug/ltrace
 *dev-debug/strace
 *dev-debug/valgrind
+*dev-embedded/avarice
 *dev-embedded/avrdude
 *dev-embedded/minipro
 *dev-embedded/picotool
