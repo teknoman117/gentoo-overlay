@@ -91,7 +91,7 @@
 *media-fonts/corefonts
 *media-fonts/fira-code
 *media-fonts/fonts-meta
-<media-gfx/blender-4.0.2
+*media-gfx/blender
 *media-gfx/gimp
 *media-gfx/imagemagick
 *media-gfx/openvdb
