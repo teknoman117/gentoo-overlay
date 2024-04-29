@@ -9,9 +9,8 @@ media-libs/mesa opencl
 media-sound/pulseaudio daemon
 
 # Disable FFmpeg in packages which don't support current FFmpeg
-#media-video/vlc ffmpeg vaapi vdpau
 media-video/vlc vaapi vdpau
-#sci-libs/opencascade ffmpeg
+sci-libs/opencascade ffmpeg
 
 # ?
 sys-libs/glibc clone3
