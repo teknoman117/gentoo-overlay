@@ -6,6 +6,7 @@
 *app-arch/pxz
 *app-arch/unrar
 *app-containers/docker
+*app-containers/docker-buildx
 *app-containers/docker-cli
 *app-containers/docker-compose
 *app-crypt/easy-rsa
