@@ -45,6 +45,7 @@ sys-apps/util-linux tty-helpers
 sys-apps/xdg-desktop-portal screencast
 sys-block/fio aio io-uring
 sys-devel/gcc vtv
+sys-fs/dosfstools compat
 sys-libs/zlib static-libs
 x11-drivers/nvidia-drivers uvm
 x11-libs/libdrm video_cards_radeon

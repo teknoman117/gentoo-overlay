@@ -59,12 +59,16 @@
 *dev-python/pyudev
 *dev-python/pyyaml
 *dev-python/virtualenv
+*dev-tcltk/expect
 *dev-util/android-studio
 *dev-util/ccache
 *dev-util/clinfo
+*dev-util/hip
+*dev-util/hipify-clang
 *dev-util/pahole
 *dev-util/rocm-smi
 *dev-util/rocm_bandwidth_test
+*dev-util/rocminfo
 *dev-util/thonny
 *dev-util/vbindiff
 *dev-util/vulkan-headers
@@ -175,6 +179,7 @@
 *sys-fs/btrfs-progs
 *sys-fs/dosfstools
 *sys-fs/exfat-utils
+*sys-fs/genext2fs
 *sys-fs/mdadm
 *sys-fs/zfs
 *sys-kernel/genkernel
