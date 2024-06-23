@@ -12,6 +12,7 @@ dev-libs/weston examples pipewire wayland-compositor xwayland
 dev-python/numpy lapack
 dev-python/pillow webp
 dev-python/pyside2 webengine
+dev-qt/qtbase mysql
 dev-qt/qtpositioning geoclue
 dev-util/astyle java
 games-fps/quakespasm sdl2
@@ -24,12 +25,14 @@ media-libs/freetype brotli harfbuzz
 media-libs/libsdl2 haptic
 media-libs/libv4l bpf
 media-libs/libva utils
+media-libs/mlt qt6
 media-libs/tiff lzma zstd
 media-video/ffmpeg jpeg2k libass libdrm opus theora v4l vpx webp x265
 media-video/pipewire aptx extra ldac sound-server
 net-dns/avahi mdnsresponder-compat
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
+net-libs/libquotient qt6
 net-libs/libwebsockets client
 net-misc/networkmanager bluetooth connection-sharing iptables iwd
 net-misc/remmina vnc
@@ -47,6 +50,7 @@ sys-block/fio aio io-uring
 sys-devel/gcc vtv
 sys-fs/dosfstools compat
 sys-libs/zlib static-libs
+x11-base/xwayland libei
 x11-drivers/nvidia-drivers uvm
 x11-libs/libdrm video_cards_radeon
 x11-libs/wxGTK gstreamer
