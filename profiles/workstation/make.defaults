@@ -8,4 +8,4 @@ USE="acl bluetooth crypt egl ffmpeg gles2 glvnd libinput opencl readline vaapi z
 ABI_X86="64 32"
 
 ACCEPT_KEYWORDS="~amd64"
-ACCEPT_LICENSE="all-rights-reserved android bh-luxi google-chrome linux-fw-redistributable Microsoft-vscode MPEG-4 MSttfEULA no-source-code Spotify Turkowski unRAR ValveSteamLicense xgraph @FREE"
+ACCEPT_LICENSE="all-rights-reserved android bh-luxi google-chrome linux-fw-redistributable Microsoft-vscode MPEG-4 MSttfEULA no-source-code OFL Spotify Turkowski unRAR ValveSteamLicense xgraph @FREE"
