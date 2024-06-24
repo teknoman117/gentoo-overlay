@@ -1,12 +1,11 @@
 EAPI=7
 
-ABC_GIT_COMMIT=0cd90d0d2c5338277d832a1d890bed286486bcf5
 S=$WORKDIR/$PN-$P
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
 SRC_URI="https://github.com/YosysHQ/$PN/archive/$P.tar.gz -> $P.tar.gz
-	 https://github.com/YosysHQ/abc/archive/$ABC_GIT_COMMIT.tar.gz -> abc-$ABC_GIT_COMMIT.tar.gz"
+	 https://github.com/YosysHQ/$PN/releases/download/$P/abc.tar.gz -> abc-$P.tar.gz"
 LICENSE=ISC
 SLOT=0
 KEYWORDS="~amd64"
@@ -16,15 +15,15 @@ DEPEND="dev-vcs/git
 	dev-libs/boost"
 
 src_prepare() {
-	ln -s ${WORKDIR}/abc-${ABC_GIT_COMMIT} ${S}/abc
+	mv ${WORKDIR}/abc-yosys-experimental/{.,}* ${S}/abc
 	eapply_user
 }
 
 src_configure() {
 	emake config-gcc
 	echo "ENABLE_LIBYOSYS=1" >> Makefile.conf
-	echo "ABCREV=default" >> Makefile.conf
-	echo "ABCPULL=0" >> Makefile.conf
+#	echo "ABCREV=default" >> Makefile.conf
+#	echo "ABCPULL=0" >> Makefile.conf
 	echo "PREFIX=/usr" >> Makefile.conf
 	echo "DESTDIR=\"${D}\"" >> Makefile.conf
 }
