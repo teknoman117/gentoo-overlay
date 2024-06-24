@@ -42,6 +42,7 @@ BDEPEND=""
 
 PATCHES=(
 	"${FILESDIR}/exact-python-version.patch"
+	"${FILESDIR}/boost.patch"
 )
 
 src_configure() {
