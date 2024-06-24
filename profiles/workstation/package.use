@@ -35,7 +35,7 @@ net-libs/gnutls pkcs11 tools
 net-libs/libquotient qt6
 net-libs/libwebsockets client
 net-misc/networkmanager bluetooth connection-sharing iptables iwd
-net-misc/remmina vnc
+net-misc/remmina rdp vnc
 net-misc/spice-gtk usbredir
 net-misc/tigervnc dri3 server
 net-wireless/bluez deprecated extra-tools
