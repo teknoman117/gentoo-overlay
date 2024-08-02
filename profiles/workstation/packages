@@ -109,7 +109,6 @@
 *media-libs/vulkan-loader
 *media-sound/pavucontrol
 *media-sound/spotify
-*media-tv/v4l-utils
 *media-video/libva-utils
 *media-video/mpv
 *net-analyzer/nmap

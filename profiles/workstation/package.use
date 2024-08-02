@@ -23,7 +23,7 @@ kde-plasma/plasma-meta legacy-systray networkmanager thunderbolt
 media-gfx/gimp webp
 media-libs/freetype brotli harfbuzz
 media-libs/libsdl2 haptic
-media-libs/libv4l bpf
+media-libs/libv4l bpf util
 media-libs/libva utils
 media-libs/mlt qt6
 media-libs/tiff lzma zstd
