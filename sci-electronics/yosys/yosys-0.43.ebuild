@@ -5,7 +5,7 @@ S=$WORKDIR/$PN-$P
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
 SRC_URI="https://github.com/YosysHQ/$PN/archive/$P.tar.gz -> $P.tar.gz
-	 https://github.com/YosysHQ/$PN/releases/download/$P/abc.tar.gz -> abc-$P.tar.gz"
+	https://github.com/YosysHQ/$PN/releases/download/$P/abc.tar.gz -> abc-$P.tar.gz"
 LICENSE=ISC
 SLOT=0
 KEYWORDS="~amd64"
