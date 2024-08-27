@@ -183,7 +183,6 @@
 *sys-fs/mdadm
 *sys-fs/zfs
 *sys-kernel/genkernel
-*=sys-kernel/gentoo-sources-6.1*
 *=sys-kernel/gentoo-sources-6.6*
 *sys-kernel/linux-firmware
 *=sys-kernel/linux-headers-6.6*
