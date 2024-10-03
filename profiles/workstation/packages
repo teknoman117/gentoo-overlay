@@ -111,6 +111,7 @@
 *media-sound/spotify
 *media-video/libva-utils
 *media-video/mpv
+*media-video/obs-studio
 *net-analyzer/nmap
 *net-analyzer/speedtest-cli
 *net-analyzer/tcpdump
