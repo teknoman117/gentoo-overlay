@@ -36,7 +36,6 @@
 *dev-cpp/asio
 *dev-cpp/gtkmm
 *dev-debug/gdb
-*dev-debug/lldb
 *dev-debug/ltrace
 *dev-debug/strace
 *dev-debug/valgrind
@@ -93,6 +92,8 @@
 *kde-apps/spectacle
 *kde-plasma/kwallet-pam
 *kde-plasma/plasma-meta
+*llvm-core/lld
+*llvm-core/lldb
 *media-fonts/corefonts
 *media-fonts/fira-code
 *media-fonts/fonts-meta
@@ -175,7 +176,6 @@
 *sys-boot/syslinux
 *sys-boot/woeusb
 *sys-devel/crossdev
-*sys-devel/lld
 *sys-fs/bcache-tools
 *sys-fs/btrfs-progs
 *sys-fs/dosfstools
