@@ -42,6 +42,7 @@ net-misc/tigervnc dri3 server
 net-wireless/bluez deprecated extra-tools
 sci-electronics/nextpnr ecp5 ice40 nexus qt5
 sci-libs/cgnslib hdf5
+sci-libs/hdf5 cxx
 sci-libs/opencascade json vtk
 sci-libs/vtk vtkm
 sys-apps/attr static-libs
