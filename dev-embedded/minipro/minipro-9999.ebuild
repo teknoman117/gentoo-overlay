@@ -20,7 +20,10 @@ LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
 
-DEPEND="virtual/libusb:1"
+DEPEND="
+	virtual/libusb:1
+	dev-libs/libb64
+	"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
