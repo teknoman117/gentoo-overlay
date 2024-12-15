@@ -175,7 +175,7 @@
 *sys-boot/efibootmgr
 *sys-boot/grub
 *sys-boot/syslinux
-*sys-boot/woeusb
+*sys-boot/woeusb-ng
 *sys-devel/crossdev
 *sys-fs/bcache-tools
 *sys-fs/btrfs-progs
