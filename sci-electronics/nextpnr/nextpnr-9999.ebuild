@@ -31,7 +31,10 @@ DEPEND="${PYTHON_DEPS}
 		sci-electronics/prjoxide
 		sci-electronics/yosys
 	)
-	qt5? ( dev-qt/qtcore:5 )
+	qt5? (
+		dev-qt/qtcore:5
+		dev-qt/qtopengl:5
+	)
 	dev-cpp/eigen:3
 	>=dev-libs/boost-1.77:=
 	"
