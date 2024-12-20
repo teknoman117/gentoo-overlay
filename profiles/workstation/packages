@@ -111,6 +111,7 @@
 *media-libs/vulkan-loader
 *media-sound/pavucontrol
 *media-sound/spotify
+*media-video/davinci-resolve
 *media-video/libva-utils
 *media-video/mpv
 *media-video/obs-studio
