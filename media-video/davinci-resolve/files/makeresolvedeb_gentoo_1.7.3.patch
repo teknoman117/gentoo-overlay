@@ -1,0 +1,74 @@
+--- makeresolvedeb_1.7.1_multi.sh	2024-04-14 13:04:31.000000000 +0200
++++ makeresolvedeb.sh	2024-06-19 07:27:59.975132053 +0200
+@@ -164,8 +164,8 @@
+     copy_object "${UNPACK_DIR}"/libs/libBlackmagicRawAPI.so "${RESOLVE_BASE_DIR}"/bin/
+ 
+     # Install panel API library
+-    create_directory "${DEB_DIR}"/usr/lib/
+-    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/lib/ libDaVinciPanelAPI.so
++    create_directory "${DEB_DIR}"/usr/#LIBDIR#/
++    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/#LIBDIR#/ libDaVinciPanelAPI.so
+ 
+     # Add postinst commands
+     cat >> "${DEB_DIR}"/DEBIAN/postinst <<EOF
+@@ -221,8 +221,8 @@
+     copy_object "${UNPACK_DIR}"/share/default_cm_config.bin "${RESOLVE_BASE_DIR}"/share/
+ 
+     # Extract panel API library
+-    create_directory "${DEB_DIR}"/usr/lib
+-    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/lib libDaVinciPanelAPI.so
++    create_directory "${DEB_DIR}"/usr/#LIBDIR#
++    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/#LIBDIR# libDaVinciPanelAPI.so
+ 
+     # BlackmagicRawAPI fixes
+     create_directory "${RESOLVE_BASE_DIR}"/bin/BlackmagicRawAPI/
+@@ -284,9 +284,9 @@
+     copy_object "${UNPACK_DIR}"/share/default_cm_config.bin "${RESOLVE_BASE_DIR}"/share/
+ 
+     # Extract panel API library
+-    create_directory "${DEB_DIR}"/usr/lib
+-    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/lib libDaVinciPanelAPI.so
+-    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/lib libFairlightPanelAPI.so
++    create_directory "${DEB_DIR}"/usr/#LIBDIR#
++    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/#LIBDIR# libDaVinciPanelAPI.so
++    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/#LIBDIR# libFairlightPanelAPI.so
+ 
+     # BlackmagicRawAPI fixes for 17.0 & 17.1
+     if [[ "$RESOLVE_VERSION" == 17.0* ]] || [[ "$RESOLVE_VERSION" == 17.1* ]];
+@@ -346,9 +346,9 @@
+     fi
+     
+     # Extract panel API library
+-    create_directory "${DEB_DIR}"/usr/lib
+-    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/lib libDaVinciPanelAPI.so
+-    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/lib libFairlightPanelAPI.so
++    create_directory "${DEB_DIR}"/usr/#LIBDIR#
++    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/#LIBDIR# libDaVinciPanelAPI.so
++    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/#LIBDIR# libFairlightPanelAPI.so
+ 
+     # Create common data dir
+     create_directory "${DEB_DIR}"/var/BlackmagicDesign/DaVinci\ Resolve
+@@ -398,9 +398,9 @@
+     copy_object "${UNPACK_DIR}"/share/remote-monitor-log-conf.xml "${RESOLVE_BASE_DIR}"/share/
+     
+     # Extract panel API library
+-    create_directory "${DEB_DIR}"/usr/lib
+-    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/lib libDaVinciPanelAPI.so
+-    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/lib libFairlightPanelAPI.so
++    create_directory "${DEB_DIR}"/usr/#LIBDIR#
++    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/#LIBDIR# libDaVinciPanelAPI.so
++    extract_tgz "${UNPACK_DIR}"/share/panels/dvpanel-framework-linux-x86_64.tgz "${DEB_DIR}"/usr/#LIBDIR# libFairlightPanelAPI.so
+ 
+     # Create common data dir
+     create_directory "${DEB_DIR}"/var/BlackmagicDesign/DaVinci\ Resolve
+@@ -780,8 +780,8 @@
+ 
+ # Verify that we have the commands we need
+ check_command tar
+-check_command fakeroot
+-check_command dpkg-deb
++#check_command fakeroot
++#check_command dpkg-deb
+ echo
+ 
+ # Create destination directories
