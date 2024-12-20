@@ -18,6 +18,7 @@ dev-util/astyle java
 games-fps/quakespasm sdl2
 games-util/steam-client-meta steamfonts
 kde-apps/kde-apps-meta pim
+kde-apps/kio-extras mtp
 kde-plasma/kde-cli-tools kdesu X
 kde-plasma/plasma-meta legacy-systray networkmanager thunderbolt
 media-gfx/gimp webp
