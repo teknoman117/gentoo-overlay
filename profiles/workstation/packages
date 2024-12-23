@@ -105,6 +105,7 @@
 *media-libs/glfw
 *media-libs/libdisplay-info
 *media-libs/mesa
+*media-libs/noise-suppression-for-voice
 *media-libs/sdl2-mixer
 *media-libs/sdl2-ttf
 *media-libs/vulkan-layers
