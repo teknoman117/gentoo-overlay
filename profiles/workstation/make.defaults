@@ -3,7 +3,7 @@ QEMU_SOFTMMU_TARGETS="x86_64 i386"
 QEMU_USER_TARGETS="aarch64 arm m68k riscv32 riscv64 x86_64"
 CURL_SSL="openssl"
 
-USE="acl bluetooth crypt egl ffmpeg gles2 glvnd libinput opencl readline vaapi zeroconf zsh-completion -consolekit -gnome -systemd"
+USE="acl bluetooth crypt egl ffmpeg gles2 glvnd ladspa libinput opencl readline vaapi zeroconf zsh-completion -consolekit -gnome -systemd"
 
 ABI_X86="64 32"
 
