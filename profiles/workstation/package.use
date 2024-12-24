@@ -31,6 +31,7 @@ media-libs/tiff lzma zstd
 media-video/ffmpeg jpeg2k libass libdrm opus theora v4l vpx webp x265
 media-video/obs-studio v4l
 media-video/pipewire aptx extra ldac sound-server
+net-analyzer/wireshark http2 http3 sshdump wifi
 net-dns/avahi mdnsresponder-compat
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
