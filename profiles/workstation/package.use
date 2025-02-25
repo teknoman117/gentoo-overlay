@@ -2,7 +2,7 @@ app-admin/sysklogd logrotate
 app-containers/containerd btrfs
 app-containers/docker btrfs
 app-crypt/pinentry gnome-keyring
-app-emulation/qemu io-uring static-user virgl virtfs
+app-emulation/qemu io-uring spice static-user virgl virtfs
 dev-lang/python tk
 dev-libs/boost context python
 dev-libs/glib static-libs
