@@ -114,6 +114,7 @@
 *media-sound/audacity
 *media-sound/spotify
 *media-video/davinci-resolve
+*media-video/ffmpeg
 *media-video/libva-utils
 *media-video/mpv
 *media-video/obs-studio
@@ -139,6 +140,7 @@
 *net-misc/iperf
 *net-misc/mosh
 *net-misc/ntp
+*net-misc/rclone
 *net-misc/remmina
 *net-misc/seafile-client
 *net-misc/socat
