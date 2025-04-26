@@ -22,13 +22,16 @@ kde-apps/kio-extras mtp samba
 kde-plasma/kde-cli-tools kdesu X
 kde-plasma/plasma-meta legacy-systray networkmanager thunderbolt
 media-gfx/gimp webp
+media-libs/babl introspection
+media-libs/gegl introspection
 media-libs/freetype brotli harfbuzz
 media-libs/libsdl2 haptic
 media-libs/libv4l bpf util
 media-libs/libva utils
 media-libs/mlt qt6
+media-libs/opensubdiv tbb
 media-libs/tiff lzma zstd
-media-video/ffmpeg jpeg2k libass libdrm opus theora v4l vpx webp x265
+media-video/ffmpeg jpeg2k lame libass libdrm opus theora v4l vpx webp x265
 media-video/obs-studio v4l
 media-video/pipewire aptx extra ldac sound-server
 net-analyzer/wireshark http2 http3 sshdump wifi
@@ -44,9 +47,11 @@ net-misc/tigervnc dri3 server
 net-wireless/bluez deprecated extra-tools
 sci-electronics/nextpnr ecp5 ice40 nexus qt5
 sci-libs/cgnslib hdf5
+sci-libs/fftw threads
 sci-libs/hdf5 cxx
 sci-libs/opencascade json vtk
 sci-libs/vtk vtkm
+sci-physics/bullet double-precision
 sys-apps/attr static-libs
 sys-apps/util-linux tty-helpers
 sys-apps/xdg-desktop-portal screencast
