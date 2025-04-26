@@ -91,9 +91,9 @@
 *kde-apps/kdenlive
 *kde-apps/kwalletmanager
 *kde-apps/okular
-*kde-apps/spectacle
 *kde-plasma/kwallet-pam
 *kde-plasma/plasma-meta
+*kde-plasma/spectacle
 *llvm-core/lld
 *llvm-core/lldb
 *llvm-runtimes/libcxx
