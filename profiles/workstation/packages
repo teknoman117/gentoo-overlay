@@ -49,6 +49,7 @@
 *dev-libs/libdbusmenu
 *dev-libs/libpfm
 *dev-libs/libtraceevent
+*dev-libs/log4cxx
 *dev-libs/rocm-opencl-runtime
 *dev-libs/rocr-runtime
 *dev-libs/weston
