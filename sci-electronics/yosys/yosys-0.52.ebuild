@@ -7,7 +7,7 @@ CXXOPTS_COMMIT="4bf61f08697b110d9e3991864650a405b3dd515d"
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
 SRC_URI="https://github.com/YosysHQ/$PN/archive/v$PV.tar.gz -> $P.tar.gz
-	https://github.com/YosysHQ/$PN/releases/download/v$PV/abc.tar.gz -> abc-$P.tar.gz
+	https://github.com/YosysHQ/abc/archive/v$PV.tar.gz -> abc-$P.tar.gz
 	https://github.com/jarro2783/cxxopts/archive/${CXXOPTS_COMMIT}.tar.gz -> cxxopts-$P.tar.gz"
 LICENSE=ISC
 SLOT=0
@@ -18,7 +18,7 @@ DEPEND="dev-vcs/git
 	dev-libs/boost"
 
 src_prepare() {
-	mv ${WORKDIR}/abc-yosys-experimental/{.,}* ${S}/abc
+	mv ${WORKDIR}/abc-${PV}/{.,}* ${S}/abc
 	mv ${WORKDIR}/cxxopts-${CXXOPTS_COMMIT}/{.,}* ${S}/libs/cxxopts
 	eapply_user
 }
