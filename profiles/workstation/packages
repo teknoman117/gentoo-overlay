@@ -57,9 +57,11 @@
 *dev-python/pip
 *dev-python/pyelftools
 *dev-python/pyserial
+*dev-python/pycotap
 *dev-python/pyudev
 *dev-python/pyyaml
 *=dev-python/rdflib-7.1.1
+*dev-python/tomli
 *dev-python/virtualenv
 *dev-tcltk/expect
 *dev-util/android-studio
