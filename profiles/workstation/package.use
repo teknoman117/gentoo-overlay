@@ -11,6 +11,7 @@ dev-libs/libpcre2 pcre32 static-libs
 dev-libs/weston examples pipewire wayland-compositor xwayland
 dev-python/numpy lapack
 dev-python/pillow webp
+dev-python/pyside uitools
 dev-python/pyside2 webengine
 dev-qt/qtbase mysql
 dev-qt/qtpositioning geoclue
