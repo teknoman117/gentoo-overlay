@@ -162,6 +162,7 @@
 *sci-libs/nlopt
 *sys-apps/dstat
 *sys-apps/ethtool
+*sys-apps/flatpak
 *sys-apps/fxload
 *sys-apps/gptfdisk
 *sys-apps/hwloc
