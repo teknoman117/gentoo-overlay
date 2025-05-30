@@ -26,8 +26,6 @@ src_prepare() {
 src_configure() {
 	emake config-gcc
 	echo "ENABLE_LIBYOSYS=1" >> Makefile.conf
-#	echo "ABCREV=default" >> Makefile.conf
-#	echo "ABCPULL=0" >> Makefile.conf
 	echo "PREFIX=/usr" >> Makefile.conf
 	echo "DESTDIR=\"${D}\"" >> Makefile.conf
 }
