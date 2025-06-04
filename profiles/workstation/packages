@@ -63,6 +63,7 @@
 *=dev-python/rdflib-7.1.1
 *dev-python/tomli
 *dev-python/virtualenv
+*dev-qt/qtserialport
 *dev-tcltk/expect
 *dev-util/android-studio
 *dev-util/ccache
@@ -117,7 +118,6 @@
 *media-libs/vulkan-loader
 *media-sound/audacity
 *media-sound/spotify
-*media-video/davinci-resolve
 *media-video/ffmpeg
 *media-video/libva-utils
 *media-video/mpv
