@@ -42,6 +42,7 @@ net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
 net-libs/libquotient qt6
 net-libs/libwebsockets client
+net-libs/nodejs npm
 net-misc/networkmanager bluetooth connection-sharing iptables iwd
 net-misc/remmina rdp vnc
 net-misc/spice-gtk usbredir
