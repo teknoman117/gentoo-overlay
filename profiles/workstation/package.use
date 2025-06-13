@@ -22,6 +22,7 @@ kde-apps/kde-apps-meta pim
 kde-apps/kio-extras mtp samba
 kde-plasma/kde-cli-tools kdesu X
 kde-plasma/plasma-meta legacy-systray networkmanager thunderbolt
+media-gfx/freecad addonmgr assembly robot surface
 media-gfx/gimp webp
 media-libs/babl introspection
 media-libs/gegl introspection
