@@ -1,4 +1,4 @@
-EAPI=7
+EAPI=8
 
 #S=$WORKDIR/$PN-$P
 
