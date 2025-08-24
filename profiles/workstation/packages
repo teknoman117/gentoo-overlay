@@ -79,6 +79,7 @@
 *dev-util/vulkan-headers
 *dev-util/vulkan-tools
 *dev-vcs/git-lfs
+*dev-vcs/subversion
 *games-action/supertuxkart
 *games-emulation/dolphin
 *games-emulation/dosbox
