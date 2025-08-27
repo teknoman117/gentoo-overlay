@@ -213,6 +213,7 @@
 *sys-process/nvtop
 *virtual/dotnet-sdk
 *virtual/wine
+*www-apps/zola
 *www-client/firefox-bin
 *www-client/google-chrome
 *www-servers/lighttpd
