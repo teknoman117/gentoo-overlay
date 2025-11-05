@@ -20,7 +20,7 @@ games-fps/quakespasm sdl2
 games-util/steam-client-meta steamfonts
 kde-apps/kde-apps-meta pim
 kde-apps/kio-extras mtp samba
-kde-framewords/kimageformats avif eps heif openexr raw
+kde-frameworks/kimageformats avif eps heif openexr raw
 kde-plasma/kde-cli-tools kdesu X
 kde-plasma/plasma-meta legacy-systray networkmanager thunderbolt
 media-gfx/freecad addonmgr assembly robot surface
