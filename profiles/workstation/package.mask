@@ -1,2 +1,2 @@
 # libheif-1.16 or greater breaks media-libs/openimageio-2.5.12.0
->=media-libs/libheif-1.16
+#>=media-libs/libheif-1.16
