@@ -92,7 +92,6 @@
 *kde-apps/gwenview
 *kde-apps/kalgebra
 *kde-apps/kde-apps-meta
-*kde-apps/kdenlive
 *kde-apps/kwalletmanager
 *kde-apps/okular
 *kde-plasma/kwallet-pam
@@ -112,7 +111,6 @@
 *media-libs/glfw
 *media-libs/libdisplay-info
 *media-libs/mesa
-*media-libs/noise-suppression-for-voice
 *media-libs/sdl2-mixer
 *media-libs/sdl2-ttf
 *media-libs/vulkan-layers
@@ -133,7 +131,6 @@
 *net-dns/dnsmasq
 *net-firewall/ufw
 *net-fs/nfs-utils
-*net-im/discord
 *net-im/signal-desktop-bin
 *net-im/slack
 *net-im/zoom
