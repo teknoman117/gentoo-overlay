@@ -12,5 +12,8 @@ media-sound/pulseaudio daemon
 media-video/vlc vaapi vdpau
 sci-libs/opencascade ffmpeg
 
+# Disable Wine WOW64 (for now)
+app-emulation/wine-vanilla -wow64
+
 # ?
 sys-libs/glibc clone3
