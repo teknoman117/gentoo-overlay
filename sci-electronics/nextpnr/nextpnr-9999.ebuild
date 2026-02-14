@@ -15,7 +15,7 @@ LICENSE="ISC"
 SLOT="0"
 KEYWORDS=""
 
-IUSE="+ecp5 +ice40 nexus qt5"
+IUSE="+ecp5 gui +ice40 nexus"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 DEPEND="${PYTHON_DEPS}
@@ -31,9 +31,8 @@ DEPEND="${PYTHON_DEPS}
 		sci-electronics/prjoxide
 		sci-electronics/yosys
 	)
-	qt5? (
-		dev-qt/qtcore:5
-		dev-qt/qtopengl:5
+	gui? (
+		>=dev-qt/qtopengl-5:=
 	)
 	dev-cpp/eigen:3
 	>=dev-libs/boost-1.77:=
@@ -44,7 +43,7 @@ BDEPEND=""
 src_configure() {
 	local mycmakeargs=(
 		-DARCH="$(usex ice40 'ice40;' '')$(usex ecp5 'ecp5;' '')$(usex nexus 'nexus' '')"
-		-DBUILD_GUI=$(usex qt5 'ON' 'OFF')
+		-DBUILD_GUI=$(usex gui 'ON' 'OFF')
 		-DUSE_OPENMP=ON
 		-DBUILD_SHARED_LIBS=OFF
 	)
