@@ -28,6 +28,7 @@ media-gfx/gimp heif webp
 media-libs/babl introspection
 media-libs/gegl introspection
 media-libs/freetype brotli harfbuzz
+media-libs/libheif x265
 media-libs/libsdl2 haptic
 media-libs/libv4l bpf util
 media-libs/libva utils
