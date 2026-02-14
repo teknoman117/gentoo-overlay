@@ -32,7 +32,7 @@ DEPEND="${PYTHON_DEPS}
 		sci-electronics/yosys
 	)
 	gui? (
-		>=dev-qt/qtopengl-5:=
+		dev-qt/qtbase:6[gui,opengl,widgets]
 	)
 	dev-cpp/eigen:3
 	>=dev-libs/boost-1.77:=
