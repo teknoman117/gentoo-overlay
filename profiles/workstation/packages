@@ -60,7 +60,7 @@
 *dev-python/pycotap
 *dev-python/pyudev
 *dev-python/pyyaml
-*=dev-python/rdflib-7.1.1
+*dev-python/rdflib
 *dev-python/tomli
 *dev-python/virtualenv
 *dev-qt/qtserialport
