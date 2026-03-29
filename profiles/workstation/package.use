@@ -1,6 +1,7 @@
 app-admin/sysklogd logrotate
 app-containers/containerd btrfs
 app-containers/docker btrfs
+app-containers/docker-credential-helpers keyring pass
 app-crypt/pinentry gnome-keyring
 app-emulation/qemu io-uring spice static-user virgl virtfs
 dev-lang/python tk
