@@ -17,6 +17,13 @@ DEPEND="dev-vcs/git
 	media-gfx/xdot
 	dev-libs/boost"
 
+# why is 0.63 a tar bomb now?
+src_unpack() {
+	mkdir -p "${S}" || die
+	cd "${S}" || die
+	unpack "${P}.tar.gz"
+}
+
 src_prepare() {
 	mv ${WORKDIR}/abc-${PV}/{.,}* ${S}/abc
 	mv ${WORKDIR}/cxxopts-${CXXOPTS_COMMIT}/{.,}* ${S}/libs/cxxopts
