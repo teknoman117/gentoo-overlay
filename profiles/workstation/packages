@@ -164,6 +164,7 @@
 *sci-geosciences/gpsd
 *sci-libs/nlopt
 *sci-libs/rocBLAS
+*sci-ml/huggingface_hub
 *sys-apps/dstat
 *sys-apps/ethtool
 *sys-apps/flatpak
