@@ -168,7 +168,7 @@
 *sci-libs/hipFFT
 *sci-libs/hipRAND
 *sci-libs/hipSPARSE
-*sci-libs/MIOpen
+*sci-libs/miopen
 *sci-libs/nlopt
 *sci-libs/rocBLAS
 *sci-libs/rocFFT
