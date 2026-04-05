@@ -175,6 +175,7 @@
 *sci-libs/rocRAND
 *sci-libs/rocSOLVER
 *sci-libs/rocSPARSE
+*sci-libs/suitesparse
 *sci-ml/huggingface_hub
 *sys-apps/dstat
 *sys-apps/ethtool
