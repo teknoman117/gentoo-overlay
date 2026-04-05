@@ -167,8 +167,10 @@
 *sci-libs/composable-kernel
 *sci-libs/hipBLAS
 *sci-libs/hipBLASLt
+*sci-libs/hipCUB
 *sci-libs/hipFFT
 *sci-libs/hipRAND
+*sci-libs/hipSOLVER
 *sci-libs/hipSPARSE
 *sci-libs/miopen
 *sci-libs/nlopt
@@ -177,6 +179,7 @@
 *sci-libs/rocRAND
 *sci-libs/rocSOLVER
 *sci-libs/rocSPARSE
+*sci-libs/rocThrust
 *sci-libs/suitesparse
 *sci-ml/huggingface_hub
 *sys-apps/dstat
