@@ -64,6 +64,7 @@
 *dev-python/pyyaml
 *dev-python/rdflib
 *dev-python/tomli
+*dev-python/uv
 *dev-python/virtualenv
 *dev-qt/qtserialport
 *dev-tcltk/expect
