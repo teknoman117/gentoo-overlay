@@ -47,6 +47,7 @@
 *dev-libs/cereal
 *dev-libs/imath:3
 *dev-libs/libdbusmenu
+*dev-libs/libfmt
 *dev-libs/libpfm
 *dev-libs/libtraceevent
 *dev-libs/log4cxx
@@ -162,8 +163,18 @@
 *sci-electronics/nextpnr
 *sci-electronics/verilator
 *sci-geosciences/gpsd
+*sci-libs/composable-kernel
+*sci-libs/hipBLASLt
+*sci-libs/hipFFT
+*sci-libs/hipRAND
+*sci-libs/hipSPARSE
+*sci-libs/MIOpen
 *sci-libs/nlopt
 *sci-libs/rocBLAS
+*sci-libs/rocFFT
+*sci-libs/rocRAND
+*sci-libs/rocSOLVER
+*sci-libs/rocSPARSE
 *sci-ml/huggingface_hub
 *sys-apps/dstat
 *sys-apps/ethtool
