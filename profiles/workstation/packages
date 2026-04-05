@@ -172,6 +172,7 @@
 *sci-libs/hipRAND
 *sci-libs/hipSOLVER
 *sci-libs/hipSPARSE
+*sci-libs/hipsparselt
 *sci-libs/miopen
 *sci-libs/nlopt
 *sci-libs/rocBLAS
