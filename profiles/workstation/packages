@@ -165,6 +165,7 @@
 *sci-electronics/verilator
 *sci-geosciences/gpsd
 *sci-libs/composable-kernel
+*sci-libs/hipBLAS
 *sci-libs/hipBLASLt
 *sci-libs/hipFFT
 *sci-libs/hipRAND
