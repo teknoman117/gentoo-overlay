@@ -70,4 +70,4 @@ sys-libs/zlib static-libs
 x11-base/xwayland libei
 x11-drivers/nvidia-drivers uvm
 x11-libs/libdrm video_cards_radeon
-x11-libs/wxGTK gstreamer
+x11-libs/wxGTK gstreamer webkit
