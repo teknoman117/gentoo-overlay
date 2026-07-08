@@ -29,6 +29,7 @@
 *app-misc/screen
 *app-misc/tmux
 *app-office/libreoffice
+*app-office/obsidian
 *app-portage/cpuid2cpuflags
 *app-portage/eix
 *app-portage/gentoolkit
