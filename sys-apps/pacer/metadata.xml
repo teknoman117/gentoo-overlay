@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>git@nrlewis.dev</email>
+		<name>Nathan Lewis</name>
+	</maintainer>
+	<longdescription lang="en">
+		pacer copies bytes from stdin to stdout while holding throughput under a
+		bandwidth cap that changes with the time of day. A base rate applies by
+		default, and zero or more time-of-day windows can override it (e.g. fast
+		overnight, slow during the day) to respect ISP fair-use policies. Live
+		transfer stats are printed to stderr, and each window's summary is frozen
+		on its own line when the schedule changes.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">teknoman117/pacer</remote-id>
+	</upstream>
+</pkgmetadata>
