@@ -1,10 +1,10 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8,9,10,11,12,13} )
+DISTUTILS_USE_PEP517=uv-build
+PYTHON_COMPAT=( python3_{8..15} )
 PYTHON_REQ_USE="tk"
 
 inherit distutils-r1 xdg-utils desktop
@@ -23,10 +23,9 @@ RDEPEND=">=dev-python/asttokens-2.0[${PYTHON_USEDEP}]
 	>=dev-python/mypy-0.761[${PYTHON_USEDEP}]
 	>=dev-python/send2trash-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/pylint-2.4.0[${PYTHON_USEDEP}]
-	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]"
-
-DEPEND="${RDEPEND}
-	>=dev-python/setuptools-45.2.0[${PYTHON_USEDEP}]"
+	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
+	>=dev-python/setuptools-45.2.0[${PYTHON_USEDEP}]
+	dev-python/wheel[${PYTHON_USEDEP}]"
 
 python_install_all() {
 	distutils-r1_python_install_all
