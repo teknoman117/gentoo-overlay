@@ -136,7 +136,7 @@
 *net-analyzer/wireshark
 *net-dialup/minicom
 *net-dialup/picocom
-*net-dns/bind-tools
+*net-dns/bind
 *net-dns/dnsmasq
 *net-firewall/ufw
 *net-fs/nfs-utils
