@@ -1,8 +1,8 @@
 *acct-group/libvirt
 *app-admin/sudo
 *app-admin/sysklogd
+*app-arch/7zip
 *app-arch/lzop
-*app-arch/p7zip
 *app-arch/pxz
 *app-arch/unrar
 *app-containers/docker
