@@ -45,7 +45,7 @@ net-dns/avahi mdnsresponder-compat
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
 net-libs/libquotient qt6
-net-libs/libwebsockets client
+net-libs/libwebsockets client socks5
 net-libs/ngtcp2 gnutls
 net-libs/nodejs npm
 net-misc/networkmanager bluetooth connection-sharing iptables iwd
