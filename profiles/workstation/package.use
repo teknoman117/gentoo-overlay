@@ -47,6 +47,7 @@ net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
 net-libs/libquotient qt6
 net-libs/libwebsockets client http-proxy socks5
+net-libs/mbedtls threads
 net-libs/ngtcp2 gnutls
 net-libs/nodejs npm
 net-misc/networkmanager bluetooth connection-sharing iptables iwd
