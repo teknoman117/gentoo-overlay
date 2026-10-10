@@ -4,6 +4,7 @@ app-containers/docker btrfs
 app-containers/docker-credential-helpers keyring pass
 app-crypt/pinentry gnome-keyring
 app-emulation/qemu io-uring spice static-user virgl virtfs
+dev-cpp/simdutf atomic-base64
 dev-lang/python tk
 dev-libs/boost context python
 dev-libs/glib static-libs
