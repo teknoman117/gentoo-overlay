@@ -217,7 +217,6 @@ sys-kernel/workstation-kernel-config
 *sys-process/htop
 *sys-process/iotop-c
 *sys-process/lsof
-*sys-process/nvtop
 *virtual/dotnet-sdk
 *virtual/wine
 *www-apps/zola
