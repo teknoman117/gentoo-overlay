@@ -1,1 +1,2 @@
 VIDEO_CARDS="-* intel"
+ACCEPT_LICENSE="${ACCEPT_LICENSE} intel-ucode"
