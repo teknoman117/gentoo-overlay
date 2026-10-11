@@ -1,5 +1,6 @@
 amd64	workstation/amd/zen3	dev
 amd64	workstation/amd/zen4	dev
+amd64	workstation/intel/pantherlake	dev
 amd64	workstation/pantherlake	dev
 amd64	workstation/zen3	dev
 amd64	workstation/zen4	dev

@@ -1,0 +1,4 @@
+dev-libs/intel-compute-runtime
+dev-libs/level-zero
+dev-util/intel-graphics-compiler
+media-libs/gmmlib
