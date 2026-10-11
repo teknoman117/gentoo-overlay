@@ -6,9 +6,12 @@ PYTHON_TARGETS="-* python3_13 python3_14"
 PYTHON_SINGLE_TARGET="-* python3_14"
 L10N="-* en en-US"
 
-USE="acl bluetooth crypt egl ffmpeg flatpak gles2 glvnd ladspa libinput lto opencl readline vaapi zeroconf zsh-completion -consolekit -gnome -systemd"
+USE="acl bluetooth crypt dist-kernel egl ffmpeg flatpak gles2 glvnd ladspa libinput lto opencl readline vaapi zeroconf zsh-completion -consolekit -gnome -systemd"
 
 ABI_X86="64 32"
 
 ACCEPT_KEYWORDS="~amd64"
 ACCEPT_LICENSE="all-rights-reserved android bh-luxi FatFs google-chrome linux-fw-redistributable Microsoft-vscode MPEG-4 MSttfEULA no-source-code Obsidian-EULA OFL Spotify Turkowski unRAR ValveSteamLicense xgraph @FREE"
+
+# Let package updates replace kernel config fragments without etc-update
+CONFIG_PROTECT_MASK="/etc/kernel/config.d"

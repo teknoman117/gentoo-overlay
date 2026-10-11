@@ -200,8 +200,10 @@
 *sys-fs/zfs
 *sys-kernel/genkernel
 *sys-kernel/gentoo-sources
+sys-kernel/gentoo-kernel
 *sys-kernel/linux-firmware
 *sys-kernel/linux-headers
+sys-kernel/workstation-kernel-config
 *sys-libs/ncurses-compat
 *sys-power/apcupsd
 *sys-power/cpupower
