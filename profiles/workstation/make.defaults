@@ -2,6 +2,9 @@ LLVM_TARGETS="AARCH64 AMDGPU ARM AVR BPF M68k RISCV"
 QEMU_SOFTMMU_TARGETS="x86_64 i386"
 QEMU_USER_TARGETS="aarch64 arm m68k riscv32 riscv64 x86_64"
 CURL_SSL="openssl"
+PYTHON_TARGETS="-* python3_13 python3_14"
+PYTHON_SINGLE_TARGET="-* python3_14"
+L10N="en en-US"
 
 USE="acl bluetooth crypt egl ffmpeg flatpak gles2 glvnd ladspa libinput lto opencl readline vaapi zeroconf zsh-completion -consolekit -gnome -systemd"
 
