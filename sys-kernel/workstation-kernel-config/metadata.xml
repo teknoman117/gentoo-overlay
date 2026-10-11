@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>git@nrlewis.dev</email>
+		<name>Nathan Lewis</name>
+	</maintainer>
+	<longdescription lang="en">
+		Installs kernel config fragments into /etc/kernel/config.d, which
+		sys-kernel/gentoo-kernel merges on top of its default configuration.
+		Only deviations from the gentoo-kernel defaults belong here.
+	</longdescription>
+</pkgmetadata>
