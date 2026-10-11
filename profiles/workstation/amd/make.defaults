@@ -1,0 +1,2 @@
+AMDGPU_TARGETS="-* gfx900 gfx1030 gfx1201"
+VIDEO_CARDS="-* amdgpu radeonsi"

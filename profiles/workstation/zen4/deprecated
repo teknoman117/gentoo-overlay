@@ -1,0 +1,3 @@
+workstation/amd/zen4
+This profile has moved to workstation/amd/zen4. Switch to it with:
+  eselect profile set teknoman117:workstation/amd/zen4
