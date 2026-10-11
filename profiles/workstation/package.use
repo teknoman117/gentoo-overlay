@@ -60,7 +60,7 @@ sci-libs/cgnslib hdf5
 sci-libs/fftw threads
 sci-libs/hdf5 cxx
 sci-libs/opencascade json vtk
-sci-libs/vtk vtkm
+sci-libs/vtk -gles2 vtkm
 sci-physics/bullet double-precision
 sys-apps/attr static-libs
 sys-apps/util-linux tty-helpers
