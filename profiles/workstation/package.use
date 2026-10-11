@@ -8,6 +8,7 @@ dev-cpp/simdutf atomic-base64
 dev-lang/python tk
 dev-libs/boost context python
 dev-libs/glib static-libs
+dev-libs/libbpf static-libs
 dev-libs/libdbusmenu gtk3
 dev-libs/libpcre2 pcre32 static-libs
 dev-libs/weston examples pipewire wayland-compositor xwayland
@@ -18,6 +19,7 @@ dev-python/pyside2 webengine
 dev-qt/qtbase mysql
 dev-qt/qtpositioning geoclue
 dev-util/astyle java
+dev-util/perf bpf
 games-fps/quakespasm sdl2
 games-util/steam-client-meta steamfonts
 kde-apps/kde-apps-meta pim

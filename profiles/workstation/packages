@@ -1,6 +1,7 @@
 *acct-group/libvirt
 *app-admin/sudo
 *app-admin/sysklogd
+*app-admin/sysstat
 *app-arch/7zip
 *app-arch/lzop
 *app-arch/pxz
@@ -36,6 +37,7 @@
 *app-text/dos2unix
 *dev-cpp/asio
 *dev-cpp/gtkmm
+*dev-debug/bpftrace
 *dev-debug/gdb
 *dev-debug/ltrace
 *dev-debug/strace
@@ -50,7 +52,6 @@
 *dev-libs/libdbusmenu
 *dev-libs/libfmt
 *dev-libs/libpfm
-*dev-libs/libtraceevent
 *dev-libs/log4cxx
 *dev-libs/weston
 *dev-python/libevdev
@@ -67,11 +68,13 @@
 *dev-qt/qtserialport
 *dev-tcltk/expect
 *dev-util/android-studio
+*dev-util/bpftop
 *dev-util/ccache
 *dev-util/clinfo
 *dev-util/objconv
-*dev-util/pahole
+*dev-util/perf
 *dev-util/thonny
+*dev-util/trace-cmd
 *dev-util/vbindiff
 *dev-util/vulkan-headers
 *dev-util/vulkan-tools
@@ -160,7 +163,6 @@
 *sci-libs/nlopt
 *sci-libs/suitesparse
 *sci-ml/huggingface_hub
-*sys-apps/dstat
 *sys-apps/ethtool
 *sys-apps/flatpak
 *sys-apps/fxload
@@ -180,6 +182,7 @@
 *sys-apps/usbutils
 *sys-apps/yarn
 *sys-auth/nss-mdns
+*sys-block/blktrace
 *sys-block/fio
 *sys-block/gparted
 *sys-block/nbd
@@ -212,6 +215,7 @@ sys-kernel/workstation-kernel-config
 *sys-process/btop
 *sys-process/cronie
 *sys-process/htop
+*sys-process/iotop-c
 *sys-process/lsof
 *sys-process/nvtop
 *virtual/dotnet-sdk
