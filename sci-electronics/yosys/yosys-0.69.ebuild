@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake
+inherit cmake flag-o-matic
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="https://yosyshq.net/yosys/"
@@ -40,6 +40,9 @@ src_unpack() {
 }
 
 src_configure() {
+	# yosys has ODR violations that break the build with LTO
+	filter-lto
+
 	local mycmakeargs=(
 		-DBUILD_SHARED_LIBS=ON
 		-DYOSYS_INSTALL_LIBRARY=ON
