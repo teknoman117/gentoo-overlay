@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit autotools
+inherit autotools flag-o-matic
 
 DESCRIPTION="The fast free Verilog/SystemVerilog simulator"
 HOMEPAGE="https://www.veripool.org/wiki/verilator"
@@ -36,4 +36,10 @@ BDEPEND="
 src_prepare() {
 	default
 	eautoconf --force
+}
+
+src_configure() {
+	# verilator does not support being built with LTO
+	filter-lto
+	default
 }
