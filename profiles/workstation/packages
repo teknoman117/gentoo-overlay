@@ -116,6 +116,7 @@
 *media-libs/sdl2-ttf
 *media-libs/vulkan-layers
 *media-libs/vulkan-loader
+*media-plugins/obs-pipewire-audio-capture
 *media-sound/audacity
 *media-sound/fluidsynth
 *media-sound/spotify
