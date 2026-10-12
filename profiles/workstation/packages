@@ -142,7 +142,6 @@
 *net-libs/libntlm
 *net-misc/chrony
 *net-misc/dhcpcd
-*=net-misc/freerdp-2*
 *net-misc/iperf
 *net-misc/mosh
 *net-misc/rclone
