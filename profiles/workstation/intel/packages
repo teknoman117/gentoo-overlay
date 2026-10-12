@@ -1,4 +1,6 @@
 dev-libs/intel-compute-runtime
 dev-libs/level-zero
+media-libs/libva-intel-media-driver
+media-libs/vpl-gpu-rt
 sys-firmware/intel-microcode
 sys-process/nvtop
