@@ -70,7 +70,7 @@ sys-apps/xdg-desktop-portal screencast
 sys-block/fio aio io-uring
 sys-devel/gcc vtv
 sys-fs/dosfstools compat
-sys-kernel/installkernel dracut
+sys-kernel/installkernel dracut efistub
 sys-libs/zlib static-libs
 sys-libs/zlib-ng static-libs
 virtual/zlib static-libs
