@@ -201,8 +201,6 @@
 *sys-fs/genext2fs
 *sys-fs/mdadm
 *sys-fs/zfs
-*sys-kernel/genkernel
-*sys-kernel/gentoo-sources
 sys-kernel/gentoo-kernel
 *sys-kernel/linux-firmware
 *sys-kernel/linux-headers
