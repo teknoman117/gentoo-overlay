@@ -46,6 +46,7 @@
 *dev-embedded/avrdude
 *dev-embedded/minipro
 *dev-embedded/picotool
+*dev-embedded/rpiboot
 *dev-java/sbt-bin
 *dev-libs/cereal
 *dev-libs/imath:3

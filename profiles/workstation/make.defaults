@@ -11,7 +11,7 @@ USE="acl bluetooth crypt dist-kernel egl ffmpeg flatpak gles2 glvnd ladspa libin
 ABI_X86="64 32"
 
 ACCEPT_KEYWORDS="~amd64"
-ACCEPT_LICENSE="all-rights-reserved android bh-luxi FatFs google-chrome linux-fw-redistributable Microsoft-vscode MPEG-4 MSttfEULA no-source-code Obsidian-EULA OFL Spotify Turkowski unRAR ValveSteamLicense xgraph @FREE"
+ACCEPT_LICENSE="all-rights-reserved android bh-luxi FatFs google-chrome linux-fw-redistributable Microsoft-vscode MPEG-4 MSttfEULA no-source-code Obsidian-EULA OFL raspberrypi-videocore-bin Spotify Turkowski unRAR ValveSteamLicense xgraph @FREE"
 
 # Let package updates replace kernel config fragments without etc-update
 CONFIG_PROTECT_MASK="/etc/kernel/config.d"
