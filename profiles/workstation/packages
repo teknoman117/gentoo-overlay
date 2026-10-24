@@ -117,6 +117,7 @@
 *media-libs/sdl2-ttf
 *media-libs/vulkan-layers
 *media-libs/vulkan-loader
+*media-plugins/obs-droidcam
 *media-plugins/obs-pipewire-audio-capture
 *media-plugins/obs-source-record
 *media-sound/audacity
