@@ -119,6 +119,7 @@
 *media-libs/vulkan-loader
 *media-plugins/obs-droidcam
 *media-plugins/obs-pipewire-audio-capture
+*media-plugins/obs-shaderfilter
 *media-plugins/obs-source-record
 *media-sound/audacity
 *media-sound/fluidsynth
