@@ -1,0 +1,106 @@
+--- a/linux/linux.mk	2026-06-23 11:06:22.000000000 -0700
++++ b/linux/linux.mk	2026-10-24 15:34:30.990844803 -0700
+@@ -4,6 +4,7 @@
+ 
+ ALLOW_STATIC ?= no    # Allow static linking some deps
+ ENABLE_GUI   ?= no    # Enable Gui components (links with Qt)
++ENABLE_IOS   ?= yes   # Enable iOS USB support (links with libimobiledevice)
+ 
+ # libimobiledevice for static linking
+ IMOBILEDEV_DIR ?= /opt/libimobiledevice
+@@ -40,8 +41,12 @@
+ 
+ else
+ $(eval	$(call ADD_Lib,$(LIBTURBOJPEG)))
++ifeq "$(ENABLE_IOS)" "yes"
+ $(eval	$(call ADD_Lib,$(LIBUSBMUXD)))
+ $(eval	$(call ADD_Lib,$(LIBIMOBILEDEV)))
++else
++CXXFLAGS += -DDISABLE_IOS=1
++endif
+ endif
+ 
+ ifdef DROIDCAM_OVERRIDE
+--- a/src/device_discovery.cc	2026-06-23 11:06:22.000000000 -0700
++++ b/src/device_discovery.cc	2026-10-24 15:34:30.991844821 -0700
+@@ -473,6 +473,10 @@
+     if (usbmuxd_version)
+     ilog("usbmuxd version %.*s loaded", 8, usbmuxd_version());
+ 
++#elif defined(DISABLE_IOS)
++    ilog("iOS USB support disabled at build time");
++    return;
++
+ #elif defined(__linux__)
+ 
+     #ifdef ALLOW_STATIC
+@@ -526,6 +530,8 @@
+ #ifdef __APPLE__
+     delete mdns;
+ 
++#elif defined(DISABLE_IOS)
++
+ #else // _WIN32 || _Linux
+ 
+     if (usbmuxd_device_list) {
+@@ -578,7 +584,7 @@
+ #endif
+ 
+ void USBMux::GetModel(Device* dev) {
+-#ifdef __APPLE__
++#if defined(__APPLE__) || defined(DISABLE_IOS)
+     return;
+ 
+ #else // _WIN32 || _Linux
+@@ -651,6 +657,9 @@
+     ilog("Apple USB: found %d devices", i);
+     return;
+ 
++#elif defined(DISABLE_IOS)
++    return;
++
+ #else // _WIN32 || _Linux
+     if (!hModuleUsbmux)
+         return;
+@@ -700,6 +709,9 @@
+ #ifdef __APPLE__
+     return net_connect(dev->address, port);
+ 
++#elif defined(DISABLE_IOS)
++    return INVALID_SOCKET;
++
+ #else
+     if (!hModuleUsbmux)
+         return INVALID_SOCKET;
+--- a/src/device_discovery.h	2026-06-23 11:06:22.000000000 -0700
++++ b/src/device_discovery.h	2026-10-24 15:34:30.990844803 -0700
+@@ -116,7 +116,7 @@
+ 
+ 
+ // MARK: Apple USB
+-#ifndef __APPLE__
++#if !defined(__APPLE__) && !defined(DISABLE_IOS)
+ #include <usbmuxd.h>
+ #include <libimobiledevice/lockdown.h>
+ #include "libimobiledevice_defines.h"
+@@ -153,6 +153,8 @@
+ #ifdef __APPLE__
+     MDNS* mdns;
+     void* usbmuxd_device_list;
++#elif defined(DISABLE_IOS)
++    void* usbmuxd_device_list;
+ #else
+     usbmuxd_device_info_t* usbmuxd_device_list;
+ #endif
+--- a/src/proxy.cc	2026-06-23 11:06:22.000000000 -0700
++++ b/src/proxy.cc	2026-10-24 15:34:30.991844821 -0700
+@@ -108,6 +108,9 @@
+                 (uint32_t) proxy->proxy_device->handle,
+                 (short) proxy->port_remote);
+ 
++            #elif defined(DISABLE_IOS)
++            int rc = -1;
++
+             #elif __linux__
+             int rc = usbmuxd_connect(
+                 (uint32_t) proxy->proxy_device->handle,

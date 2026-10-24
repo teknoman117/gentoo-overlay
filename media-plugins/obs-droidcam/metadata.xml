@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>git@nrlewis.dev</email>
+		<name>Nathan Lewis</name>
+	</maintainer>
+	<use>
+		<flag name="android">Pull in <pkg>dev-util/android-tools</pkg> (adb) for Android USB support</flag>
+		<flag name="qt6">Link with <pkg>dev-qt/qtbase</pkg>:6 to show error dialogs in OBS and follow the bind IP set in the OBS profile</flag>
+		<flag name="ios">Enable iOS USB support via <pkg>app-pda/libimobiledevice</pkg> and <pkg>app-pda/usbmuxd</pkg></flag>
+	</use>
+	<upstream>
+		<remote-id type="github">dev47apps/droidcam-obs-plugin</remote-id>
+	</upstream>
+</pkgmetadata>
